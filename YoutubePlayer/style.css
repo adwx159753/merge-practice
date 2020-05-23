@@ -5,3 +5,23 @@ h2{
     font-size:22px;
     height:40px;
 }
+
+#Margin{
+    background:blueviolet;
+    color:yellow;
+}
+
+#Border{
+    background:black;
+    color:white;
+}
+
+#Padding{
+    background:grey;
+    color:powderblue;
+}
+
+#Content{
+    background-color:white;
+    color: black;
+}
