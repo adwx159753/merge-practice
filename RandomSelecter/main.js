@@ -10,7 +10,8 @@ $(document).ready(function(){
         "pic/img0.jpg","pic/img1.jpg","pic/img2.jpg"
     ];
 
-    $("input").click(function(){
+    $("#select").click(function(){
+        console.log("[id=select]");
         //numberOfListItem = LI的內容的大小
         let numberOfListItem = $("#choices li").length;
         //製作亂數，以達成呼叫 li:0, li:1, li:2, ....
