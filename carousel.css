@@ -3,9 +3,10 @@
 /* Padding below the footer and lighter body text */
 
 body {
+  background:url('pic/background.jpg') no-repeat;
+  background-size: cover;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  color: #5a5a5a;
 }
 
 
@@ -24,15 +25,19 @@ body {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 32rem;
-  background-color: #777;
+  height: 40rem;
 }
 .carousel-item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 32rem;
+  max-height: 100%;  
+    max-width: 100%; 
+    width: auto;
+    height: 40rem;
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+    margin: auto;
 }
 
 
@@ -56,17 +61,25 @@ body {
 /* Featurettes
 ------------------------- */
 
+.featurette{
+  background-color:white;
+}
+
 .featurette-divider {
   margin: 5rem 0; /* Space out the Bootstrap <hr> more */
 }
 
 /* Thin out the marketing headings */
 .featurette-heading {
-  font-weight: 300;
+  font-weight: 500;
   line-height: 1;
   letter-spacing: -.05rem;
 }
 
+.featurette-image{
+  position:relative;
+  top:50px;
+}
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */

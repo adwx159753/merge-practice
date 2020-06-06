@@ -1,10 +1,8 @@
 let topicsArray=[
-    "尚未開學",
-    "國定假日",
-    "不上課",
-    "隨機性",
-    "不上課",
-    "條件判斷"
+    "【魔法少女】霞",
+    "【情人節】【復課】靜流",
+    "【公主】貪吃配可",
+    "【夏日】【復課】咲戀",
 ];
 
 let startDate = new Date();
@@ -16,4 +14,4 @@ function setMonthAndDay(startMonth,startDay){
     startDate.setSeconds(0);
 }
 
-setMonthAndDay(4,1);
+setMonthAndDay(6,3);
