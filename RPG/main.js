@@ -14,7 +14,7 @@ $(document).ready(function(){
                ,0,0,0,1,0,3
                ,1,0,3,1,0,0
                ,1,0,3,1,0,0
-               ,1,0,0,0,0,0];
+               ,1,0,0,0,0,2];
     ctx=$("#myCanvas")[0].getContext("2d");
 
     //擺放主角
@@ -60,6 +60,7 @@ $(document).keydown(function(event){
     //cutImagePositionX = 主角的動作(圖片切割的位置)
     let targetImgMainX,targetImgMainY,targetBlock,cutImagePositionX;
 
+    
     event.preventDefault();
 
     //方向鍵移動
@@ -102,6 +103,11 @@ $(document).keydown(function(event){
     }
     else if(mapArray[targetBlock] == 1){
         $("#talkBox").text("山")
+    }
+    else if(mapArray[targetBlock] == 2){
+        currentImgMainX = targetImgMainX;
+        currentImgMainY = targetImgMainY;
+        $("#talkBox").text("終點");
     }
     else if(mapArray[targetBlock] == 3){
         $("#talkBox").text("人");
