@@ -5,7 +5,6 @@
 let mapArray,ctx,currentImgMainX,currentImgMainY;
 let imgMountain,imgMain,imgEnemy;
 
-
 //第一部分：建立地圖
 $(document).ready(function(){
     //0=可以走, 1=障礙物, 2=終點, 3=敵人
