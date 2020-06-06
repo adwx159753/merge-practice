@@ -3,8 +3,6 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  background:url('pic/background.jpg') no-repeat;
-  background-size: cover;
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
