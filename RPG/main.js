@@ -60,7 +60,6 @@ $(document).keydown(function(event){
     //cutImagePositionX = 主角的動作(圖片切割的位置)
     let targetImgMainX,targetImgMainY,targetBlock,cutImagePositionX;
 
-    
     event.preventDefault();
 
     //方向鍵移動

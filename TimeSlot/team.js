@@ -1,7 +1,7 @@
 let id;
 
 for(let i=1;i<=5;i++){
-    $("body").append('<img id= ' + i + ' src = picture/BOSS' + i + '.PNG height=400px><br>');
+    $("body").append('<img id= ' + i + ' src = picture/BOSS' + i + '.jpg height=400px><br>');
     console.log(id);
 }
 
