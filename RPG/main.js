@@ -104,8 +104,8 @@ $(document).keydown(function(event){
         $("#talkBox").text("山")
     }
     else if(mapArray[targetBlock] == 2){
-        currentImgMainX = targetImgMainX;
-        currentImgMainY = targetImgMainY;
+        currentImgMainX = 0;
+        currentImgMainY = 0;
         $("#talkBox").text("終點");
     }
     else if(mapArray[targetBlock] == 3){
