@@ -36,7 +36,7 @@ function setTable(){
         $("#courseTable").append(
             trSpecial +
             "<td>"+ thisDate.toLocaleDateString().slice(5) +"</td>"+
-            "<td>"+ "<img src = pic/"+ a +".jpg>" +"</td>"+
+            "<td>"+ "<img src = pic/characters3/"+ a +".png>" +"</td>"+
             "<td>" + topicsArray[x]+"</td>"+
             "</tr>"
         ); //每一列有場次、預計日期、主題
