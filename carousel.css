@@ -7,6 +7,11 @@ body {
   padding-bottom: 3rem;
 }
 
+#iframe_block{
+  position: absolute;
+  top:5.8%;
+}
+
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */

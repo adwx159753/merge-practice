@@ -1,23 +1,12 @@
 $(document).ready(function(){
     setTable();
- 
-    如果有人來設定日期
-    $("#inputDate").change(function(){
-        let inputDate = $(this).val();
-        console.log(inputDate);//yyyy-mm-dd
-        let splitText = inputDate.split("-");
-        console.log(splitText);
-        setMonthAndDay(splitText[1],splitText[2]);
-        setTable();
-    });
- 
 });
  
 function setTable(){
-    $("#courseTable").empty();
+    $("#this_month_Table").empty();
  
     //一次產生固定標題列
-    $("#courseTable").append(
+    $("#this_month_Table").append(
         "<tr><th>時間</th><th>圖片</th><th>主題</th></tr>"
     );
     //反覆產生資料列
@@ -27,17 +16,33 @@ function setTable(){
     let oneDayMilliseconds = 24*60*60*1000;
  
     for(let x=0; x<topicCount; x++){
-        let thisDate = new Date(startDate.getTime()+11*x*oneDayMilliseconds);
         let trSpecial = "<tr>";
-        if(topicsArray[x]=="不上課"){
-            trSpecial = "<tr style='background-color:lightyellow'>";
-        }
-        let a=x+1;
-        $("#courseTable").append(
+        $("#this_month_Table").append(
             trSpecial +
-            "<td>"+ thisDate.toLocaleDateString().slice(5) +"</td>"+
-            "<td>"+ "<img src = pic/characters3/"+ a +".png>" +"</td>"+
-            "<td>" + topicsArray[x]+"</td>"+
+            "<td>"+ topicsArray[x][0] +"</td>"+
+            "<td>"+ "<img src = pic/characters_month/"+  topicsArray[x][2] +".png>" +"</td>"+
+            "<td>" + topicsArray[x][1]+"</td>"+
+            "</tr>"
+        ); //每一列有場次、預計日期、主題
+    }
+
+    /*---------------------*/
+    $("#characters_order").empty();
+ 
+    //一次產生固定標題列
+    $("#characters_order").append(
+        "<tr><th>圖片</th><th>主題</th></tr>"
+    );
+    //反覆產生資料列
+    let topicCount_a = charactersArray.length;
+
+    for(let x=0; x<topicCount_a; x++){
+        let pic_order = topicCount + x + 1;
+        let trSpecial = "<tr>";
+        $("#characters_order").append(
+            trSpecial +
+            "<td>"+ "<img src = pic/characters_month/"+ pic_order +".png>" +"</td>"+
+            "<td>" + charactersArray[x][0]+"</td>"+
             "</tr>"
         ); //每一列有場次、預計日期、主題
     }
