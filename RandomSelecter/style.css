@@ -1,7 +1,7 @@
 body{
     text-align:center;
     background-attachment: scroll;
-    background-image: url("pic/Gashapon.jpg");
+    background-image: url('pic/Gashapon.jpg');
     background-repeat: no-repeat;
     background-position: 50% 30%;
 }

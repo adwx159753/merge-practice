@@ -5,6 +5,7 @@
 body {
   padding-top: 3rem;
   padding-bottom: 3rem;
+  font-weight:bold;
 }
 
 #iframe_block{
@@ -65,7 +66,7 @@ body {
 ------------------------- */
 
 .featurette{
-
+  
 }
 
 .featurette-divider {

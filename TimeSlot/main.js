@@ -30,8 +30,8 @@ $(document).on("imageClick",function onYouTubeIframeAPIReady(e,id){
 
     current = id - 1;//播放該boss攻略影片
 
-    $('.name').html("<h2> Boss" + id + "</h2><br>");//王的名稱
-    $('.picture').html('<img src = TimeSlot/picture/team'+id+'.jpg width=400px><h2>推薦攻略<br></h2>');//隊伍截圖
+    $('.name').html("<h2 style='font-weight:bold;'> Boss" + id + "</h2><br>");//王的名稱
+    $('.picture').html('<img src = TimeSlot/picture/team'+id+'.jpg width=400px><h2 style="font-weight:bold;">推薦攻略<br></h2>');//隊伍截圖
     console.log(id);
     //此註解需在html增加<div class="timeslot"></div>
     //$('.timeslot').html('<h3>時間軸</h3><img src = timeslot'+id+'.png width=400px>')//時間軸截圖
