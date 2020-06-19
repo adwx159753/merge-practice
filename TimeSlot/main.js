@@ -17,8 +17,8 @@ $(document).ready(function(){
     }
     player = new YT.Player("player",
     {
-        height:"600",
-        width:"640",
+        height:"400",
+        width:"550",
         videoId:playList[0],
         playerVars:{
             "autoplay":0,//不自動播放
